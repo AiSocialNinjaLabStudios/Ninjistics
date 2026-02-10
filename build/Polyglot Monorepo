@@ -1,0 +1,118 @@
+# ==========================================
+# GLOBAL & OS-SPECIFIC (The "Noise" Filter)
+# ==========================================
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+*.log
+
+# ==========================================
+# BUILD ARTIFACTS & DEPENDENCIES
+# ==========================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.pytest_cache/
+*.egg-info/
+
+# --- JavaScript / TypeScript (Node) ---
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+
+# --- Java ---
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+build/
+
+# --- Rust ---
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# --- Go (Golang) ---
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Test binary, built with `go test -c`
+*.test
+# Output of the go coverage tool
+*.out
+vendor/
+
+# --- C / C++ ---
+# Prerequisites
+*.d
+# Compiled Object files
+*.o
+*.ko
+*.obj
+*.elf
+# Linker output
+*.ilk
+*.map
+*.exp
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+# Compiled Static libraries
+*.a
+*.lib
+# Executables
+*.exe
+*.out
+*.app
+
+# --- C# / .NET ---
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================================
+# BENCHMARKING DATA & FINDINGS
+# ==========================================
+# You want to keep the report summaries, but IGNORE the raw massive datasets
+# created during runtime to avoid bloating the git history.
+
+# Ignore raw data dumps
+data/raw/
+*.csv
+*.json
+*.sql
+*.sqlite
+
+# Keep the documented findings
+!results/final_report.md
+!results/summary_graphs.png
+
+# ==========================================
+# ENVIRONMENT VARIABLES (Security)
+# ==========================================
+.env
+.env.local
+secrets.json
