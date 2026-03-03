@@ -1,0 +1,15 @@
+import React, { useState } from 'react';
+
+export default function NinjisticsComponent() {
+    const [count, setCount] = useState(0);
+
+    return (
+        <div className="container">
+            <h1>Welcome to Ninjistics</h1>
+            <p>Build something awesome!</p>
+            <button onClick={() => setCount(count + 1)}>
+                Count: {count}
+            </button>
+        </div>
+    );
+}
